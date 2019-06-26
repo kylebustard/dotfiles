@@ -1,0 +1,25 @@
+# install xcode
+xcode-select —-install
+
+# install brew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# install iterm2 and tmux
+
+# install zsh
+brew install zsh zsh-completions
+
+# change default shell to zsh
+chsh -s $(which zsh)
+
+# test
+echo $SHELL # should output /bin/zsh
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# install ligatures and fira code font
+git clone https://github.com/tonsky/FiraCode.git
+
+# install spaceship-prompt
+npm i -g spaceship-prompt
